@@ -1,0 +1,8 @@
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\bin\Debug\exoMethode.exe.config
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\bin\Debug\exoMethode.exe
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\bin\Debug\exoMethode.pdb
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\obj\Debug\exoMethode.csproj.AssemblyReference.cache
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\obj\Debug\exoMethode.csproj.SuggestedBindingRedirects.cache
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\obj\Debug\exoMethode.csproj.CoreCompileInputs.cache
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\obj\Debug\exoMethode.exe
+D:\319-ConceptionApplication\Code VS\exoMethode\exoMethode\obj\Debug\exoMethode.pdb
