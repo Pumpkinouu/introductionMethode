@@ -19,45 +19,63 @@ namespace exoMethode
             float fltDiviser;
             int intMultiplier;
             char chr;
+            bool refaire = true;
 
             //// Programme Principal ////
-
-            Titre();
-
-            // Demande de saisir la première valeur à l'utilisateur
-            Console.Write("\nVeuillez saisir la valeur 1 :");
-            intValeur1 = Convert.ToInt32(Console.ReadLine());
-
-            // Demande la deuxième saisie à l'utilisateur
-            Console.Write("\nVeuillez saisir la valeur 2 :");
-            intValeur2 = Convert.ToInt32(Console.ReadLine());
-
-            // Demande de chosir entre A et D
-            Console.Write("\nVeuillez choisir la méthode (A/B/C/D) :");
-            chr = Convert.ToChar(Console.ReadLine());
-
-            // Instruction pour choix faire un choix multiple si 'A' fais la méthode additionner
-            switch (chr)
+            do
             {
-                case 'A':
-                    intAdditionner = additionner(intValeur1, intValeur2);
-                    Console.WriteLine("\nLe resultat est : " + intAdditionner);
-                    break;
-                case 'B':
-                    intSoustraire = soustraire(intValeur1, intValeur2);
-                    Console.WriteLine("\nLe resultat est : " + intSoustraire);
-                    break;
-                case 'C':
-                    fltDiviser = diviser(intValeur1, intValeur2);
-                    Console.WriteLine("\nLe resultat est : " + fltDiviser);
-                    break;
-                case 'D':
-                    intMultiplier = multiplier(intValeur1, intValeur2);
-                    Console.WriteLine("\nLe resultat est : " + intMultiplier);
-                    break;
-            }
 
-            Console.ReadLine();
+                Titre();
+
+                // Demande de saisir la première valeur à l'utilisateur
+                Console.Write("\nVeuillez saisir la valeur 1 :");
+                intValeur1 = Convert.ToInt32(Console.ReadLine());
+
+                // Demande la deuxième saisie à l'utilisateur
+                Console.Write("\nVeuillez saisir la valeur 2 :");
+                intValeur2 = Convert.ToInt32(Console.ReadLine());
+
+                // Demande de chosir entre A et D
+                Console.Write("\nVeuillez choisir la méthode (A/B/C/D) :");
+                chr = Convert.ToChar(Console.ReadLine());
+
+                // Instruction pour choix faire un choix multiple si 'A' fais la méthode additionner
+                switch (chr)
+                {
+                    case 'A':
+                        intAdditionner = additionner(intValeur1, intValeur2);
+                        Console.WriteLine("\nLe resultat est : " + intAdditionner);
+                        break;
+                    case 'B':
+                        intSoustraire = soustraire(intValeur1, intValeur2);
+                        Console.WriteLine("\nLe resultat est : " + intSoustraire);
+                        break;
+                    case 'C':
+                        fltDiviser = diviser(intValeur1, intValeur2);
+                        Console.WriteLine("\nLe resultat est : " + fltDiviser);
+                        break;
+                    case 'D':
+                        intMultiplier = multiplier(intValeur1, intValeur2);
+                        Console.WriteLine("\nLe resultat est : " + intMultiplier);
+                        break;
+                }
+
+                // Demande à l'utilisateur si il aimerait recommencer le programme 
+                Console.Write("\nvoulez vous refaire le programme ? (o/n):");
+                string oui = "o";
+                if (oui == Console.ReadLine())
+                {
+                    refaire = true;
+                }
+                else
+                {
+                    refaire = false;
+                }
+                Console.Clear();
+
+            } while (refaire == true);
+
+
         }
         /// <summary>
         /// Affichage du titre
