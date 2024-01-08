@@ -36,7 +36,7 @@ namespace exoMethode
                 intValeur2 = Convert.ToInt32(Console.ReadLine());
 
                 // Demande de chosir entre A et D
-                Console.Write("\nVeuillez choisir la méthode (A/B/C/D) :");
+                Console.Write("\nVeuillez choisir la méthode (A/S/D/M) :");
                 chr = Convert.ToChar(Console.ReadLine());
 
                 // Instruction pour choix faire un choix multiple si 'A' fais la méthode additionner
@@ -46,15 +46,15 @@ namespace exoMethode
                         intAdditionner = additionner(intValeur1, intValeur2);
                         Console.WriteLine("\nLe resultat est : " + intAdditionner);
                         break;
-                    case 'B':
+                    case 'S':
                         intSoustraire = soustraire(intValeur1, intValeur2);
                         Console.WriteLine("\nLe resultat est : " + intSoustraire);
                         break;
-                    case 'C':
+                    case 'D':
                         fltDiviser = diviser(intValeur1, intValeur2);
                         Console.WriteLine("\nLe resultat est : " + fltDiviser);
                         break;
-                    case 'D':
+                    case 'M':
                         intMultiplier = multiplier(intValeur1, intValeur2);
                         Console.WriteLine("\nLe resultat est : " + intMultiplier);
                         break;
